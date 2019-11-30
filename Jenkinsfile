@@ -50,7 +50,7 @@ pipeline {
             steps {
                 milestone(1)
                 kubernetesDeploy(
-                    kubeconfigId: 'kubeconfig',
+                    kubeconfigId: 'cluster1',
                     configs: 'train-schedule-kube.yml',
                     enableConfigSubstitution: true
                 )
